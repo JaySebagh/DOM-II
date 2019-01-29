@@ -27,3 +27,8 @@ busimg.addEventListener("drag", e => {
 busimg.addEventListener("load", e => {
     document.body.style.backgroundColor = "black";
 })
+
+let ptag = document.querySelector("p");
+ptag.addEventListener("mousemove", e => {
+    document.body.style.backgroundColor = "green";
+})
