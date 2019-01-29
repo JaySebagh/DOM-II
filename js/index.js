@@ -13,7 +13,11 @@ bodyclick.addEventListener("click", e => {
 })
 
 // double click bus image = maroon background
-let imgdblclick = document.querySelector("img");
-imgdblclick.addEventListener("dblclick", e => {
+let busimg = document.querySelector("img");
+busimg.addEventListener("dblclick", e => {
     document.body.style.backgroundColor = "maroon";
+})
+
+busimg.addEventListener("drag", e => {
+    document.body.style.backgroundColor = "pink";
 })
