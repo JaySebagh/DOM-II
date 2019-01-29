@@ -18,6 +18,12 @@ busimg.addEventListener("dblclick", e => {
     document.body.style.backgroundColor = "maroon";
 })
 
+// drag bus image = pink bg
 busimg.addEventListener("drag", e => {
     document.body.style.backgroundColor = "pink";
+})
+
+// bus image loaded = black bg
+busimg.addEventListener("load", e => {
+    document.body.style.backgroundColor = "black";
 })
