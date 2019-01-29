@@ -18,6 +18,13 @@ busimg.addEventListener("dblclick", e => {
     document.body.style.backgroundColor = "maroon";
 })
 
+// click bus img = light green bg
+// used stopPropagation so background doesn't become lightblue
+busimg.addEventListener("click", e => {
+    document.body.style.backgroundColor = "lightgreen";
+    e.stopPropagation();
+})
+
 // drag bus image = pink bg
 busimg.addEventListener("drag", e => {
     document.body.style.backgroundColor = "pink";
@@ -45,7 +52,7 @@ busimg.addEventListener("mouseenter", e => {
 });
 
 // nav click down = red bg
-let navclick = document.querySelector("a");
+let navclick = document.querySelector("nav");
 navclick.addEventListener("mousedown", e => {
     document.body.style.backgroundColor = "red"
 });
@@ -54,4 +61,9 @@ navclick.addEventListener("mousedown", e => {
 let mvmnt = document.querySelector("h2");
 mvmnt.addEventListener("mousemove", e => {
     document.body.style.backgroundColor = "orange"
+});
+
+// prevents Home to go to link
+document.querySelector("a").addEventListener("click", function(event) {
+    event.preventDefault()
 });
