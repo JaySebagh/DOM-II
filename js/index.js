@@ -55,13 +55,13 @@ busimg.addEventListener("mouseenter", e => {
 let navclick = document.querySelector("nav");
 navclick.addEventListener("mousedown", e => {
     document.body.style.backgroundColor = "red"
+    e.preventDefault();
 });
 
-// "welcome to fun bus" mouse move = orange bg
-let mvmnt = document.querySelector("h2");
-mvmnt.addEventListener("mousemove", e => {
+navclick.addEventListener("mouseup", e => {
     document.body.style.backgroundColor = "orange"
-});
+    e.stopPropagation();
+})
 
 // prevents Home to go to link
 document.querySelector("a").addEventListener("click", function(event) {
