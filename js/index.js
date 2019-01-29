@@ -32,3 +32,7 @@ let ptag = document.querySelector("p");
 ptag.addEventListener("mousemove", e => {
     document.body.style.backgroundColor = "green";
 })
+
+busimg.addEventListener("mouseout", e => {
+   document.body.style.backgroundColor = "yellow"
+});
