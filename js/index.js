@@ -11,3 +11,9 @@ let bodyclick = document.querySelector("body");
 bodyclick.addEventListener("click", e => {
     document.body.style.backgroundColor = "lightblue";
 })
+
+// double click bus image = maroon background
+let imgdblclick = document.querySelector("img");
+imgdblclick.addEventListener("dblclick", e => {
+    document.body.style.backgroundColor = "maroon";
+})
