@@ -55,7 +55,6 @@ busimg.addEventListener("mouseenter", e => {
 let navclick = document.querySelector("nav");
 navclick.addEventListener("mousedown", e => {
     document.body.style.backgroundColor = "red"
-    e.preventDefault();
 });
 
 navclick.addEventListener("mouseup", e => {
